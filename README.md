@@ -4,7 +4,7 @@ This workspace now ships with multiple generators for the "OXK Pixel" brand.
 
 ## Scripts
 
-- `Logo.py` – generates pixel-art style channel assets (avatar, banner, thumbnail, favicon) from a black/white silhouette using repeated text (default `OXK`).
+- `Logo.py` – generates pixel-art style channel assets (avatar, banner, favicon) from a black/white silhouette using repeated text (default `OXK`).
 - `create_oxk_logo.py` – produces a 1600×600 glowing "OXK" intro/banner.
 - `create_oxk_square.py` – outputs an 800×800 cyan mosaic avatar.
 - `create_oxk_avatar.py` – renders a deterministic 1024×1024 avatar with perfect grid alignment.
@@ -13,7 +13,7 @@ This workspace now ships with multiple generators for the "OXK Pixel" brand.
 
 ## Logo.py quick start
 
-This script generates pixel-art style channel assets (avatar, banner, thumbnail, favicon) from a black/white silhouette image using repeated text (default: `OXK`).
+This script generates pixel-art style channel assets (avatar, banner, favicon) from a black/white silhouette image using repeated text (default: `OXK`).
 
 Files created
 - `out/avatar_512.png` — square avatar (512×512)
@@ -48,20 +48,15 @@ Notes
 - The generated assets use a block/grid approach so they keep a pixel-art look.
 - If you want different sizes or block sizes, edit the `assets` dict inside `Logo.py`.
 
-## High-resolution brand set
+## Brand assets
 
-Run the dedicated generator to export the 2048×2048 logo and 5120×2880 banner (PNG + JPG):
+Files in `out/brand/`:
+- `logo_1024_centered.png` — 1024×1024 centered logo
+- `OXK_Pixel_Banner.png` — OXK Pixel banner
+- `banner_5120x2880.png` — 5120×2880 banner
+- `Yoytube Watermark.png` — YouTube watermark
 
-```powershell
-C:\Python314\python.exe "c:\Users\hshar\OneDrive\Desktop\Logo\create_oxk_brand.py"
-```
-
-Outputs are stored in `out/brand/`:
-- `logo_1024.png`
-- `logo_2048.png`
-- `banner_2560x1440.png`
-- `banner_2560x1440.jpg`
-- `banner_5120x2880.png`
-- `banner_5120x2880.jpg`
-
-All assets use deterministic mosaic alignment, neon glow, spotlight lighting, and subtle tech-grid backgrounds for a cohesive OXK Pixel identity.
+Other images:
+- `out/OXK Instagram Logo.png` — Instagram logo
+- `out/Inspire.jpg` — inspiration reference
+- `OXK_logo_art.png` — pixel art logo
